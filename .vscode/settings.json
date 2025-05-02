@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "*js": "js",
+        "*.js": "javascript",
+        "*.ts": "typescript",
+        "*.py": "python",
+        "*.html": "html",
+        "*.css": "css",
+        "*.java": "java",
+        "*.c": "c",
+        "*.cpp": "cpp",
+        "*.json": "json",
+        "*.md": "markdown",
+        "*.rb": "ruby",
+        "*.php": "php",
+        "*.cs": "csharp",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}
