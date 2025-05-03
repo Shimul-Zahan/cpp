@@ -1,0 +1,1 @@
+{"name":"Local: diagonal","url":"d:\\restart(01-05-25)\\basic_cpp\\2D_array\\problems_solve\\diagonal.cpp","tests":[{"id":1746281181725,"input":"4\n1 5 12 1\n2 -4 6 7\n3 8 5 9\n3 5 23 -6\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\restart(01-05-25)\\basic_cpp\\2D_array\\problems_solve\\diagonal.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: array","url":"d:\\restart(01-05-25)\\basic_cpp\\2D_array\\implement\\array.cpp","tests":[{"id":1746280878798,"input":"3 5\n1 2 3 4 5\n5 4 3 2 1\n3 2 5 1 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\restart(01-05-25)\\basic_cpp\\2D_array\\implement\\array.cpp","group":"local","local":true}
