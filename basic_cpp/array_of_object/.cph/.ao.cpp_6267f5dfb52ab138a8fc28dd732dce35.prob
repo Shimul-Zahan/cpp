@@ -1,0 +1,1 @@
+{"name":"Local: ao","url":"d:\\restart(01-05-25)\\basic_cpp\\array_of_object\\ao.cpp","tests":[{"id":1746376141320,"input":"3\nRakib 101 21 3.75\nNusrat 102 22 3.90\nTamim 103 20 3.65\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\restart(01-05-25)\\basic_cpp\\array_of_object\\ao.cpp","group":"local","local":true}
