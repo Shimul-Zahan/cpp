@@ -39,25 +39,22 @@ int main()
 {
     int N, Q;
     cin >> N >> Q;
-    vector<long long int> v(N + 1, 0);
-    int sum = 0;
-    for (int i = 1; i <= N; i++)
-    {
-        int val;
-        cin >> val;
-        sum += val;
-        v[i] = sum;
-    }
+    vector<long long int> v(N + 1);
+    vector<long long int> sum_array(N+1);
 
-    for (int i = 1; i <= Q; i++)
-    {
-        int start, end;
-        cin >> start >> end;
-        long long int sum = 0;
-        sum = v[end] - v[start - 1];
+    for (int i=1; i<=N; i++){
+        cin >>v[i];
+    }
+    sum_array[1] = v[1];
+    for (int i=2; i<=N; i++){
+        sum_array[i] = sum_array[i - 1] + v[i];
+    }
+    for (int i=1; i<=Q; i++){
+        int l, r;
+        cin>>l>>r;
+        long long int sum = sum_array[r] - sum_array[l-1];
         cout<<sum<<endl;
     }
-
     return 0;
 }
 
