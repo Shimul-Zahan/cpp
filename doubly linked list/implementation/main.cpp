@@ -72,6 +72,65 @@ void insertInAnyPoint(Node *&head, Node *tail, int pos, int val)
 }
 
 // ! delete operations
+void deleteAttheStart(Node* &head, Node* tail){
+    if (head == nullptr) {
+        return;
+    }
+    Node *current = head;
+    head = current->next;
+    if (head == nullptr) {
+        tail = nullptr;
+    } else {
+        head->prev = nullptr;
+    }
+    delete current;
+}
+
+void deleteAtAnyPosition(Node*& head, Node*& tail, int pos) {
+    if (head == nullptr) {
+        cout << "The list is empty!" << endl;
+        return;
+    }
+
+    Node* current = head;
+
+    if (pos == 0) {
+        deleteAttheStart(head, tail); 
+        return;
+    }
+
+    for (int i = 0; i < pos; i++) {
+        current = current->next;
+    }
+
+    if (current->next == nullptr) {
+        deleteAtTheEnd(head, tail);
+        return;
+    }
+
+    current->prev->next = current->next;
+    current->next->prev = current->prev;
+    delete current;
+}
+
+void deleteAtTheEnd(Node*& head, Node*& tail) {
+    if (tail == nullptr) {
+        cout << "The list is empty!" << endl;
+        return;
+    }
+
+    Node* current = tail;
+
+    if (head == tail) {
+        head = nullptr;
+        tail = nullptr;
+    } else {
+        tail = tail->prev;
+        tail->next = nullptr;
+    }
+
+    delete current;
+}
 
 // ! printing
 void printingForward(Node *head)
@@ -112,6 +171,7 @@ int main()
     }
     // insertAtTheStart(head, tail, 100);
     insertInAnyPoint(head, tail, 2, 69);
+    deleteAttheStart(head, tail);
     printingForward(head);
     printingBackward(tail);
 }
