@@ -1,0 +1,4 @@
+Printing forward
+10 20 69 30 40 50 
+Printing backward
+50 40 30 69 20 10 
